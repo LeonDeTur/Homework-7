@@ -11,8 +11,8 @@
 int m = 3;
 int n = 4;
 double[,] twoDemensionArray = new double[m,n];
-Console.WriteLine(twoDemensionArray[0,1]);
-
+Console.WriteLine("Двумерный массив размером 3х4, заполненный вещественными числами:");
+Console.WriteLine();
 InputRandomNumbersInArray(twoDemensionArray);
 
 void InputRandomNumbersInArray (double[,] DoubleArray)
@@ -21,12 +21,16 @@ void InputRandomNumbersInArray (double[,] DoubleArray)
     {
             for (int j = 0; j < n; j++)
         {
-            DoubleArray[i,j] = new Random.NextDouble();
-            Console.WriteLine(DoubleArray[i,j]);
+            DoubleArray[i,j] = Math.Round(new Random().NextDouble() + new Random().Next(-1000,1001), 3);
+            if (DoubleArray[i,j] > -1)
+            {
+                Console.Write($" {DoubleArray[i,j]} ");
+            }
+            else
+            {
+                Console.Write($"{DoubleArray[i,j]} ");
+            }
         }
+        Console.WriteLine();
     }
-        DoubleArray[i,j] = new Random.NextDouble();
-        Console.WriteLine(DoubleArray[i,j]);
-    }
-
 }
