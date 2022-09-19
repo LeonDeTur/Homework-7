@@ -17,7 +17,7 @@ InputRandomNumbersInArray(twoDemensionArray);
 
 void InputRandomNumbersInArray (double[,] DoubleArray)
 {
-    for(int i = 0; i < 3; i++)
+    for(int i = 0; i < m; i++)
     {
             for (int j = 0; j < n; j++)
         {

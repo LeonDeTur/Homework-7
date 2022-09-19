@@ -21,9 +21,10 @@ PrintDoubleArray(doubleArray);
 int[] findResult = FindNum (num, doubleArray);
 PrintResult(findResult);
 
+// 
 int[,] InputRandomNumbersInArray (int[,] DoubleArray)
 {
-    for(int i = 0; i < 3; i++)
+    for(int i = 0; i < m; i++)
     {
             for (int j = 0; j < n; j++)
         {
